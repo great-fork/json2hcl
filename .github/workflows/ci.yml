@@ -26,12 +26,12 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-    - uses: actions/upload-artifact@v2
-      with:
-        name: json2hcl
-        path: dist/*
+    # - uses: actions/upload-artifact@v2
+    #   with:
+    #     name: json2hcl
+    #     path: dist/*
 
-    - uses: google-github-actions/release-please-action@v3
-      with:
-        release-type: go
-        package-name: json2hcl
+    # - uses: google-github-actions/release-please-action@v3
+    #   with:
+    #     release-type: go
+    #     package-name: json2hcl
